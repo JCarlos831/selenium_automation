@@ -1,0 +1,11 @@
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.deps.json
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.runtimeconfig.json
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.runtimeconfig.dev.json
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.pdb
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csprojAssemblyReference.cache
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csproj.CoreCompileInputs.cache
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.AssemblyInfoInputs.cache
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.AssemblyInfo.cs
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.pdb
