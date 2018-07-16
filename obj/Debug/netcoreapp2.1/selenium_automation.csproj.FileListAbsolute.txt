@@ -3,9 +3,13 @@
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.runtimeconfig.dev.json
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.dll
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/selenium_automation.pdb
-/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csprojAssemblyReference.cache
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csproj.CoreCompileInputs.cache
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.AssemblyInfoInputs.cache
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.AssemblyInfo.cs
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.dll
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.pdb
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csprojResolveAssemblyReference.cache
