@@ -7,17 +7,14 @@ namespace selenium_automation
 {
     class Program
     {
-        // Create the reference for our browser
-        IWebDriver driver = new ChromeDriver();
-        // static void Main(string[] args)
-        // {
-        // }
 
         [SetUp]
         public void Initialize()
         {
+            PropertiesCollection.Driver = new ChromeDriver();
+
             // Navigate to Execute Automation demo page
-            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=Login=Login");
+            PropertiesCollection.Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=Login=Login");
             Console.WriteLine("Opened URL");
         }
 
@@ -25,29 +22,23 @@ namespace selenium_automation
         public void ExecuteTest()
         {
             // Title
-            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
+            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
             // Inital
-            SeleniumSetMethods.EnterText(driver, "Initial", "executeautomation", "Name");
+            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
 
             // Click
-            SeleniumSetMethods.Click(driver, "Save", "Name");
+            SeleniumSetMethods.Click("Save", PropertyType.Name);
 
-            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL(driver, "TitleId", "Id"));
-            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
+            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
+            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
         }
-
-        // [Test]
-        // public void NextTest()
-        // {
-        //     Console.WriteLine("Next method");
-        // }
 
         [TearDown]
         public void CleanUp()
         {
             // Close browser
-            driver.Close();
+            PropertiesCollection.Driver.Close();
             Console.WriteLine("Closed the browser");
         }
     }
