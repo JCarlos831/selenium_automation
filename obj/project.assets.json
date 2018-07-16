@@ -692,6 +692,18 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Selenium.Support/3.13.1": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.13.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {}
+        }
+      },
       "Selenium.WebDriver/3.13.1": {
         "type": "package",
         "dependencies": {
@@ -2725,6 +2737,23 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Selenium.Support/3.13.1": {
+      "sha512": "cvk/LM2FBfne/Xdrawe667K57EDSxx9D8omJIWBym7DZYZ2sfcc46CqwkNnSxQJM4td4PRincnOUHV2FF9MhVw==",
+      "type": "package",
+      "path": "selenium.support/3.13.1",
+      "files": [
+        "lib/net35/WebDriver.Support.dll",
+        "lib/net35/WebDriver.Support.xml",
+        "lib/net40/WebDriver.Support.dll",
+        "lib/net40/WebDriver.Support.xml",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net45/WebDriver.Support.xml",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.3.13.1.nupkg.sha512",
+        "selenium.support.nuspec"
       ]
     },
     "Selenium.WebDriver/3.13.1": {
@@ -5726,6 +5755,7 @@
       "NUnit.Console >= 3.8.0",
       "NUnit.ConsoleRunner >= 3.8.0",
       "NUnit3TestAdapter >= 3.10.0",
+      "Selenium.Support >= 3.13.1",
       "Selenium.WebDriver >= 3.13.1",
       "WebDriverChromeDriver >= 2.10.0"
     ]
@@ -5794,6 +5824,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "3.10.0"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "3.13.1"
           },
           "Selenium.WebDriver": {
             "target": "Package",

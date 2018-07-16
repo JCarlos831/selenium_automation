@@ -16,28 +16,32 @@ namespace selenium_automation
         [SetUp]
         public void Initialize()
         {
-            // Navigate to Google page
-            driver.Navigate().GoToUrl("https://www.google.com");
+            // Navigate to Execute Automation demo page
+            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=Login=Login");
             Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // Find the Element
-            IWebElement element = driver.FindElement(By.Name("q"));
+            // Title
+            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
 
-            // Perform operation
-            element.SendKeys("executeautomation" + Keys.Enter);
+            // Inital
+            SeleniumSetMethods.EnterText(driver, "Initial", "executeautomation", "Name");
 
-            Console.WriteLine("Executed Test");
+            // Click
+            SeleniumSetMethods.Click(driver, "Save", "Name");
+
+            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL(driver, "TitleId", "Id"));
+            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
         }
 
-        [Test]
-        public void NextTest()
-        {
-            Console.WriteLine("Next method");
-        }
+        // [Test]
+        // public void NextTest()
+        // {
+        //     Console.WriteLine("Next method");
+        // }
 
         [TearDown]
         public void CleanUp()
