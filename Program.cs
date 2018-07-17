@@ -14,19 +14,19 @@ namespace selenium_automation
             PropertiesCollection.Driver = new ChromeDriver();
 
             // Navigate to Execute Automation demo page
-            PropertiesCollection.Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=Login=Login");
+            PropertiesCollection.Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // Initialize the page by calling its reference
-            EAPageObject page = new EAPageObject();
 
-            page.TxtIntial.SendKeys("executeautomation");
+            // Login to application
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA = pageLogin.Login("execute", "automation");
 
-            page.BtnSave.Click();
+            pageEA.FillUserForm("JC", "Juan", "Carlos");
 
 
 
