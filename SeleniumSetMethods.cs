@@ -3,21 +3,32 @@ using OpenQA.Selenium.Support.UI;
 
 namespace selenium_automation
 {
-    class SeleniumSetMethods
+    public static class SeleniumSetMethods
     {
-        // Enter Text
-        public static void EnterText(IWebElement element, string value)
+        /// <summary>
+        /// Extended method for entering text in the control
+        /// </summary>
+        /// <param name="element">Element.</param>
+        /// <param name="value">Value.</param>
+        public static void EnterText(this IWebElement element, string value)
         {
             element.SendKeys(value);
         }
 
-        // Click into a button, Checkbox, option, etc
-        public static void Click(IWebElement element)
+        /// <summary>
+        /// Click into a button, Checkbox, option, etc
+        /// </summary>
+        /// <param name="element">Element.</param>
+        public static void Clicks(this IWebElement element)
         {
             element.Click();
         }
 
-        // Selecting a drop down control
+        /// <summary>
+        /// Selecting a drop down control
+        /// </summary>
+        /// <param name="element">Element.</param>
+        /// <param name="value">Value.</param>
         public static void SelectDropDown(IWebElement element, string value)
         {
             new SelectElement(element).SelectByText(value);

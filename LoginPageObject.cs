@@ -22,9 +22,9 @@ namespace selenium_automation
         public EAPageObject Login(string userName, string password)
         {
             // UserName
-            TxtUserName.SendKeys(userName);
+            TxtUserName.EnterText(userName);
             // Password
-            TxtPassword.SendKeys(password);
+            TxtPassword.EnterText(password);
             // Click Button
             BtnLogin.Submit();
 

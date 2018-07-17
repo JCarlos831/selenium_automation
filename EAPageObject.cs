@@ -15,7 +15,7 @@ namespace selenium_automation
          public IWebElement DdlTitleID { get; set; }
 
          [FindsBy(How = How.Name, Using = "Initial")]
-         public IWebElement TxtIntial { get; set; }
+         public IWebElement TxtInitial { get; set; }
 
          [FindsBy(How = How.Name, Using = "FirstName")]
          public IWebElement TxtFirstName { get; set; }
@@ -28,17 +28,10 @@ namespace selenium_automation
 
         public void FillUserForm(string initial, string firstName, string middleName)
         {
-            SeleniumSetMethods.EnterText(TxtIntial, initial);
-            SeleniumSetMethods.EnterText(TxtFirstName, firstName);
-            SeleniumSetMethods.EnterText(TxtMiddleName, middleName);
-            SeleniumSetMethods.Click(BtnSave);
-
-
-
-            //TxtIntial.SendKeys(initial);
-            //TxtFirstName.SendKeys(firstName);
-            //TxtMiddleName.SendKeys(middleName);
-            //BtnSave.Click();
+            TxtInitial.EnterText(initial);
+            TxtFirstName.EnterText(firstName);
+            TxtMiddleName.EnterText(middleName);
+            BtnSave.Clicks();
         }
      }
  }
