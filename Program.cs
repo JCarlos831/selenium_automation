@@ -21,17 +21,29 @@ namespace selenium_automation
         [Test]
         public void ExecuteTest()
         {
-            // Title
-            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+            // Initialize the page by calling its reference
+            EAPageObject page = new EAPageObject();
 
-            // Inital
-            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+            page.TxtIntial.SendKeys("executeautomation");
 
-            // Click
-            SeleniumSetMethods.Click("Save", PropertyType.Name);
+            page.BtnSave.Click();
 
-            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
-            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+
+
+
+
+
+            //// Title
+            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+
+            //// Inital
+            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+
+            //// Click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);
+
+            //Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
+            //Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
         }
 
         [TearDown]
