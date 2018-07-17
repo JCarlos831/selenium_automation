@@ -1,10 +1,9 @@
-﻿ using System;
- using OpenQA.Selenium;
- using SeleniumExtras.PageObjects;
+﻿using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
 
- namespace selenium_automation
- {
-     class EAPageObject
+namespace selenium_automation
+{
+    class EAPageObject
      {
 
          public EAPageObject()
@@ -29,10 +28,17 @@
 
         public void FillUserForm(string initial, string firstName, string middleName)
         {
-            TxtIntial.SendKeys(initial);
-            TxtFirstName.SendKeys(firstName);
-            TxtMiddleName.SendKeys(middleName);
-            BtnSave.Click();
+            SeleniumSetMethods.EnterText(TxtIntial, initial);
+            SeleniumSetMethods.EnterText(TxtFirstName, firstName);
+            SeleniumSetMethods.EnterText(TxtMiddleName, middleName);
+            SeleniumSetMethods.Click(BtnSave);
+
+
+
+            //TxtIntial.SendKeys(initial);
+            //TxtFirstName.SendKeys(firstName);
+            //TxtMiddleName.SendKeys(middleName);
+            //BtnSave.Click();
         }
      }
  }

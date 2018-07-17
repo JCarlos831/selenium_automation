@@ -1,6 +1,5 @@
 ﻿using System;
 using NUnit.Framework;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace selenium_automation
@@ -27,11 +26,6 @@ namespace selenium_automation
             EAPageObject pageEA = pageLogin.Login("execute", "automation");
 
             pageEA.FillUserForm("JC", "Juan", "Carlos");
-
-
-
-
-
 
             //// Title
             //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
