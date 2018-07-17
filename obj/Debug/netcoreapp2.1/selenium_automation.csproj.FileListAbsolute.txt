@@ -12,3 +12,4 @@
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/NUnit3.TestAdapter.pdb
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/nunit.engine.netstandard.dll
 /Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/bin/Debug/netcoreapp2.1/Mono.Cecil.dll
+/Users/JuanCMontoya/Projects/vscode/csharp/selenium_automation/obj/Debug/netcoreapp2.1/selenium_automation.csprojAssemblyReference.cache

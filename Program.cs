@@ -21,11 +21,13 @@ namespace selenium_automation
         public void ExecuteTest()
         {
 
+            ExcelLib.PopulateInCollection(@"/Users/JuanCMontoya/Desktop/Data.xlsx");
+
             // Login to application
             LoginPageObject pageLogin = new LoginPageObject();
-            EAPageObject pageEA = pageLogin.Login("execute", "automation");
+            EAPageObject pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
 
-            pageEA.FillUserForm("JC", "Juan", "Carlos");
+            pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "FirstName"), ExcelLib.ReadData(1,"MiddleName"));
 
             //// Title
             //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
